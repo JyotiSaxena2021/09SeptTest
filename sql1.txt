@@ -1,0 +1,3 @@
+select Id,max(PlayerScore) from DemoTable1383 group by Id order by max(PlayerScore) DESC
+
+Select TOP 2 * from Products where Price = (Select Max(Price) from Products)
